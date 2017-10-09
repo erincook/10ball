@@ -1,4 +1,4 @@
 deploy:
-	provider: firebase
-	token:
-		secure: $firebase_token
+ provider: firebase
+  token:
+   secure: $firebase_token
