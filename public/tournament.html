@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Ghost Tour</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+	 
+    }
+	
+	
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 100%}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: yellow;
+      height: 705px;
+    }
+	.header {
+	  text-align: center;
+	  background-color: black;
+	  padding: 10px;
+	}
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: yellow;
+      color: black;
+      padding: 0px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+  <div class="header">
+      <img src="images/logo.png" style="width:300px;">
+
+    </div>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+	
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="tournament.html">Tournaments</a></li>
+		<li><a href="about.html">About Tournaments</a></li>
+        <li><a href="rules.html">Rules</a></li>
+		<li><a href="Handicap.html">Handicap Conversion</a></li>
+        <li><a href="payout.html">Payout %</a></li>
+        <li><a href="Forms.html">Forms</a></li>
+        <li><a href="library.html">Library</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+   <picture>
+     <source media="(min-width: 500px)" srcset="images/pool4.jpg">
+      <img src="" alt="" style="width: 100%;">
+   </picture>
+   <picture>
+     <source media="(min-width: 500px)" srcset="images/poolpic.jpg">
+      <img src="" alt="" style="width: 100%;">
+   </picture>
+   <picture>
+     <source media="(min-width: 500px)" srcset="images/bw.jpg">
+      <img src="" alt="" style="width: 100%;">
+   </picture>
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1><u>Tournament page</u></h1>
+	  <p>Before you enter make sure to look up your handicap. Make sure you test your device to make 
+	  sure the video function works. We recomend, but we do not require, printing out a score sheet to use while you compete.
+            <h2>Click on a ticket below to enter a tournament</h2><br>
+	  <table style="width:100%">
+  <tr>
+    <th style="text-align: left;"><u>use ticket for 7' table</u></th>
+    <th style="text-align: left;" colspan="2"><u>weekly event</u></th>
+  </tr>
+  <tr>
+    <td><a href="" target="_blank"><img src="images/ticket.png" style="width:60%;"></a></td>
+    <td><a href="" target="_blank"><img src="images/ticket.png" style="width:60%;"></a></td>
+  </tr>	
+  <table style="width:100%">
+  <tr>
+    <th style="text-align: left;"><u>use ticket for 8' table</u></th>
+    <th style="text-align: left;" colspan="2"><u>use ticket for open event</u></th>
+  </tr>
+  <tr>
+    <td><a href="" target="_blank"><img src="images/ticket.png" style="width:60%;"></a></td>
+    <td><a href="" target="_blank"><img src="images/ticket.png" style="width:60%;"></a></td>
+  </tr>	
+  <table style="width:100%">
+  <tr>
+    <th style="text-align: left;"><u>use ticket for 9' table</u></th>
+    <th style="text-align: left;"><u>test page</u></th>
+  </tr>
+  <tr>
+    <td><a href="" target="_blank"><img src="images/ticket.png" style="width:60%;"></a></td>
+    <td><a href="webrtcandrecorder.html" target="_blank"> <img src="images/ticket.png" style="width:60%;"></a></td>
+  </tr>	
+</table>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="column side" style="background-color:black;">
+	<a href="http://www.muellers.com/" target="_blank"><img src="http://www.muellers.com/ClientAssets/Images/Muellers-Logo-Md.png"
+	  style="width:100%;height:15%;border:0;">
+	</a><br><br>
+	<a href="https://cuestix.com/" target="_blank"><img src="https://cuestix.com/skin/frontend/rwd/cuestix/images/logo.png"
+	  style="width:100%;height:15%;border:0;">
+	  </a><br><br>
+	  <a href="http://billiardcue.com/index.htm" target="_blank"><img src="http://billiardcue.com/index_htm_files/17801.jpg"
+	  style="width:100%;height:15%;border:o;">
+	</a><br><br>
+	<a href="http://www.1stpawnllc.com" target="_blank"><img src="http://www.1stpawnllc.com/uploads/1/0/1/3/101321574/1stpawnlogo-gray_1_orig.jpg"
+	  style="width:100%;height:15%;border:0;">
+	</a> 
+  </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>&copy; 10ball.org 2017</p>
+  <p>All rights reserved</p>
+</footer>
+
+</body>
+</html>
