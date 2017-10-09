@@ -9,4 +9,4 @@ before_script:
 script:
     - echo "Deploying!"
 after success:
-  - firebase deploy --token $firebase_token --non-interactive
+    - firebase deploy --token $firebase_token --non-interactive
