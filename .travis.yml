@@ -1,8 +1,0 @@
-before_deploy: "echo 'Preparing to deploy!'"
-deploy:
-  provider: firebase
-  token:
-    secure: "neTHx+T4pQBayjqlnxPu7blXfXldbJJRuJOr/nbvbrKAW/Y+5T/dBfJch+E5uJJIGmL29FeW9Oslh0uz1PczG++FQhFMzR6vSizkL/lsjyVfxjnm79r9+VJY9rJW9hctr53reH7vENwly2Na9LQkDE38+e2IcsFQv88K78ncpqbWAiR5ckuXdEUxFivO2YW4JnYe0jEacuYIRfSUCAvYYZp5NjQLxbv01Pf52NiUU6b1FNRHKu1ReNjhrNfYYrj/ryZpfjZqZtVkgrsMBDizwAFM9D6+uVU8FvjDAqha6UqDJ4M1GwR0swUrKzXOGCfdyAjyy++vSl0756K80zSMj8eLe9ce4p07uz8O19iuMu3Rq2TE8zyNG9X9IwZx9bMSU9GV49KNsWI3dkMjcaxMw9AToZHd6wzirLq9j/vNu1H0Mwv+hOTKx1dDvvEtRvDxiL1MBWFOG3iVZhNlBtyz0rirMGOux7slnhS5Dg27ACDe5yo+UmVjZmbW+vBZDFb51jEFKt2NqwbyWjwPGfjZWuOLJWfjogUVBp6HEnVxEq4nb/z7OUG9G+HYPVuoNh+57sRHUCL7JOPabWw8a6JzSJ4XDV5pqfVKXnmeGFWHVVNklLeODCejBxjXMxm6uQBDWWZ1NlGA34D069MIeHKMfdfWfRuFwmXMY4AIw/xTBuM="
-  project: "ball-6af20"
-  message: "Deploying to Firebase"
-after_deploy: "echo 'Hope this worked!'"
