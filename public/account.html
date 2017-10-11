@@ -109,18 +109,18 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="userEmail">Email Address</label>  
+  <label class="col-md-4 control-label" for="loginEmail">Email Address</label>  
   <div class="col-md-4">
-  <input id="userEmail" name="userEmail" type="text" placeholder="ie(johnsmith@domain.com)" class="form-control input-md" required="">
+  <input id="loginEmail" name="loginEmail" type="text" placeholder="ie(johnsmith@domain.com)" class="form-control input-md" required="">
     
   </div>
 </div>
 
 <!-- Password input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="userPassword">Password</label>
+  <label class="col-md-4 control-label" for="loginPassword">Password</label>
   <div class="col-md-4">
-    <input id="userPassword" name="userPassword" type="password" placeholder="enter a password" class="form-control input-md" required="">
+    <input id="loginPassword" name="loginPassword" type="password" placeholder="enter your password" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -129,7 +129,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="userSubmit"></label>
   <div class="col-md-4">
-    <button id="userSubmit" name="userSubmit" class="btn btn-primary">Submit</button>
+    <button id="loginSubmit" name="loginSubmit" class="btn btn-primary">Log In!</button>
   </div>
 </div>
 
@@ -187,6 +187,26 @@
   <div class="col-md-4">
     <input id="userPasswordConfirm" name="userPasswordConfirm" type="password" placeholder="re-enter your password" class="form-control input-md" required="">
     
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="userName">User Name</label>  
+  <div class="col-md-4">
+  <input id="userName" name="userName" type="text" placeholder="" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Prepended text-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="phoneNumber">Phone Number</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon">+ </span>
+      <input id="phoneNumber" name="phoneNumber" class="form-control" placeholder="Enter Your Phone Number with country code" type="text" required="">
+    </div>
+    <p class="help-block">IE [ + 1 (555) - 555 - 5555]</p>
   </div>
 </div>
 <!-- Button -->
