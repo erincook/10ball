@@ -1,3 +1,4 @@
+// The javascript for the handicap conversion formula
 var scores = [s,s,s,s,s,s,s,s,s,s,s,s,]
 var last10
 if (scores lengths = 10){
