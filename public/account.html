@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>The Ghost Tour</title>
@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Import Firebase SDK -->
+    <script src="#"></script>
+    <script type="text/javascript" src="app.js"></script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
     .navbar {
@@ -47,12 +50,12 @@
       .row.content {height:auto;} 
     }
   </style>
-  <div class="header">
-      <img src="images/logo.png" style="width:300px;">
-
-    </div>
 </head>
 <body>
+    <div class="header">
+        <img src="images/logo.png" style="width:300px;">
+
+    </div>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -109,18 +112,18 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="userEmail">Email Address</label>  
+  <label class="col-md-4 control-label" for="loginEmail">Email Address</label>  
   <div class="col-md-4">
-  <input id="userEmail" name="userEmail" type="text" placeholder="ie(johnsmith@domain.com)" class="form-control input-md" required="">
+  <input id="loginEmail" name="loginEmail" type="text" placeholder="ie(johnsmith@domain.com)" class="form-control input-md" required="">
     
   </div>
 </div>
 
 <!-- Password input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="userPassword">Password</label>
+  <label class="col-md-4 control-label" for="loginPassword">Password</label>
   <div class="col-md-4">
-    <input id="userPassword" name="userPassword" type="password" placeholder="enter a password" class="form-control input-md" required="">
+    <input id="loginPassword" name="loginPassword" type="password" placeholder="enter a password" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -129,7 +132,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="userSubmit"></label>
   <div class="col-md-4">
-    <button id="userSubmit" name="userSubmit" class="btn btn-primary">Submit</button>
+    <button id="loginSubmit" name="userSubmit" class="btn btn-primary">Login</button>
   </div>
 </div>
 
