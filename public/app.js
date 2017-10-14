@@ -9,6 +9,9 @@ var config = {
 };
 firebase.initializeApp(config);
 
+// Call Upon Firebase Database
+var database = firebase.database();
+
 //register a user
 function userSignUp() {
     var email = document.getElementById('userEmail').value;
@@ -42,5 +45,24 @@ function userSignUp() {
 // login a user
 
 
-//coonect to data to store other info
+// coonect to data to store other info
 
+// account login | register  page hide/showS
+function displayLoginForm() {
+    var logInForm = document.getElementById("loginForm");
+    if (logInForm.style.display === "none") {
+        logInForm.style.display = "block";
+        document.getElementById("registerForm").style.display = "none";
+    } else {
+        logInForm.style.display = "none";
+    }
+}
+function displayRegistrationForm() {
+    var regForm = document.getElementById("registerForm");
+    if (regForm.style.display === "none") {
+        regForm.style.display = "block";
+        document.getElementById("loginForm").style.display = "none";
+    } else {
+        regForm.style.display = "none";
+    }
+}

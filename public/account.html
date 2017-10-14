@@ -1,12 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>The Ghost Tour</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>The Ghost Tour</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+
+    <script src="bootstrap/bootstrap.min.js"></script>
     <!-- Import Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>
@@ -16,245 +17,589 @@
 
     <!-- Exclude firestore | messaging -->
     <!--<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-firestore.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-messaging.js"></script> 
+        <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-messaging.js"></script>
      -->
     <script type="text/javascript" src="app.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-	 
-    }
-	
-	
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 100%}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: yellow;
-      height: 705px;
-    }
-	.header {
-	  text-align: center;
-	  background-color: black;
-	  padding: 10px;
-	}
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: yellow;
-      color: black;
-      padding: 0px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-  </style>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+
+
+        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+        .row.content {
+            height: 100%
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: yellow;
+            height: 705px;
+        }
+
+        .header {
+            text-align: center;
+            background-color: black;
+            padding: 10px;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: yellow;
+            color: black;
+            padding: 0px;
+        }
+
+        /* On small screens, set height to 'auto' for sidenav and grid */
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <img src="images/logo.png" style="width:300px;">
+        <img src="images/10ballshield.png" style="width:300px;">
 
     </div>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="tournament.html">Tournaments</a></li>
+                    <li><a href="about.html">About Tournaments</a></li>
+                    <li><a href="rules.html">Rules</a></li>
+                    <li><a href="Handicap.html">Handicap Conversion</a></li>
+                    <li><a href="payout.html">Payout %</a></li>
+                    <li><a href="Forms.html">Forms</a></li>
+                    <li><a href="library.html">Library</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="account.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-sm-2 sidenav">
+                <picture>
+                    <source media="(min-width: 500px)" srcset="images/pool4.jpg">
+                    <img src="" alt="" style="width: 100%;">
+                </picture>
+                <picture>
+                    <source media="(min-width: 500px)" srcset="images/poolpic.jpg">
+                    <img src="" alt="" style="width: 100%;">
+                </picture>
+                <picture>
+                    <source media="(min-width: 500px)" srcset="images/bw.jpg">
+                    <img src="" alt="" style="width: 100%;">
+                </picture>
+            </div>
+            <div class="col-sm-8 text-left">
+
+                <style type="text/css">
+                    /* Credit to bootsnipp.com for the css for the color graph */
+                    .colorgraph {
+                        height: 5px;
+                        border-top: 0;
+                        background: #c4e17f;
+                        border-radius: 5px;
+                        background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+                        background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+                        background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+                        background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+                    }
+                </style>
+                <!-- Login Form -->
+
+                <form role="form" id="loginForm">
+                    <h2>Please Log In <small>Welcome back to The Ghost Tour</small></h2>
+                    <hr class="colorgraph">
+                    <div class="form-group">
+                        <input type="email" name="loginEmal" id="loginEmail" class="form-control input-lg" placeholder="Email Address" tabindex="4" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="loginPassword" id="loginPassword" class="form-control input-lg" placeholder="Password" tabindex="5" required>
+                    </div>
+                    <hr class="colorgraph">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6"><input type="submit" value="Login" class="btn btn-primary btn-block btn-lg" tabindex="7" ></div>
+                        <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg" onclick="displayRegistrationForm()">Register</a></div>
+                        
+                    </div>
+                </form>
+
+
+                <!-- Registration -->
+                <form role="form" id="registerForm" hidden>
+                    <h2>Please Sign Up <small>Welcome to The Ghost Tour</small></h2>
+                    <hr class="colorgraph">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="firstName" id="firstName" class="form-control input-lg" placeholder="First Name" tabindex="1" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="lastName" id="lastName" class="form-control input-lg" placeholder="Last Name" tabindex="2" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="displayName" id="displayName" class="form-control input-lg" placeholder="Display Name" tabindex="3" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="userEmal" id="userEmail" class="form-control input-lg" placeholder="Email Address" tabindex="4" required>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input type="password" name="userPassword" id="userPassword" class="form-control input-lg" placeholder="Password" tabindex="5" required>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input type="password" name="passwordConfirmation" id="passwordConfirmation" class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-3 col-md-3">
+                            <span class="button-checkbox">
+                                <button type="button" class="btn" data-color="info" tabindex="7">I Agree</button>
+                                <input type="checkbox" name="termsConditions" id="termsConditons" class="hidden" value="1">
+                            </span>
+                        </div>
+                        <div class="col-xs-8 col-sm-9 col-md-9">
+                            By clicking <strong class="label label-primary">Register</strong>, you agree to the <a href="#" data-toggle="modal" data-target="#tos">Terms and Conditions</a> set out by this site, including our Cookie Use.
+                        </div>
+                    </div>
+
+                    <hr class="colorgraph">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+                        <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg" onclick="displayLoginForm()">Sign In</a></div>
+                    </div>
+                </form>
+                <!-- Modal -->
+                <div class="modal fade" id="tos" tabindex="-1" role="dialog" aria-labelledby="terms" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">Close [x]</button>
+                                <h4 class="modal-title" id="terms">Terms & Conditions</h4>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Terms go here -->
+                                <style type="text/css">
+                                    ol {
+                                        margin: 0;
+                                        padding: 0
+                                    }
+
+                                    table td,
+                                    table th {
+                                        padding: 0
+                                    }
+
+                                    .c4 {
+                                        background-color: #fcfcfc;
+                                        color: #444444;
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                        vertical-align: baseline;
+                                        font-size: 18pt;
+                                        font-family: "Arial";
+                                        font-style: normal
+                                    }
+
+                                    .c1 {
+                                        background-color: #fcfcfc;
+                                        color: #666666;
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                        vertical-align: baseline;
+                                        font-size: 10pt;
+                                        font-family: "Arial";
+                                        font-style: normal
+                                    }
+
+                                    .c3 {
+                                        background-color: #fcfcfc;
+                                        color: #666666;
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                        vertical-align: baseline;
+                                        font-size: 18pt;
+                                        font-family: "Arial";
+                                        font-style: normal
+                                    }
+
+                                    .c10 {
+                                        color: #000000;
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                        vertical-align: baseline;
+                                        font-size: 11pt;
+                                        font-family: "Arial";
+                                        font-style: normal
+                                    }
+
+                                    .c0 {
+                                        padding-top: 12pt;
+                                        padding-bottom: 12pt;
+                                        line-height: 1.15;
+                                        orphans: 2;
+                                        widows: 2;
+                                        text-align: left
+                                    }
+
+                                    .c11 {
+                                        padding-top: 0pt;
+                                        padding-bottom: 0pt;
+                                        line-height: 1.15;
+                                        orphans: 2;
+                                        widows: 2;
+                                        text-align: left
+                                    }
+
+                                    .c8 {
+                                        font-weight: 700;
+                                        text-decoration: none;
+                                        vertical-align: baseline;
+                                        font-family: "Arial";
+                                        font-style: italic
+                                    }
+
+                                    .c7 {
+                                        background-color: #fcfcfc;
+                                        font-size: 7pt;
+                                        font-family: "Times New Roman";
+                                        color: #666666;
+                                        font-weight: 400
+                                    }
+
+                                    .c5 {
+                                        background-color: #fcfcfc;
+                                        font-size: 10pt;
+                                        color: #1155cc;
+                                        text-decoration: underline
+                                    }
+
+                                    .c2 {
+                                        background-color: #ffffff;
+                                        max-width: 468pt;
+                                        padding: 72pt 72pt 72pt 72pt
+                                    }
+
+                                    .c6 {
+                                        background-color: #fcfcfc;
+                                        font-size: 10pt;
+                                        color: #666666
+                                    }
+
+                                    .c9 {
+                                        color: inherit;
+                                        text-decoration: inherit
+                                    }
+
+                                    .c12 {
+                                        font-style: italic
+                                    }
+
+                                    .c14 {
+                                        height: 11pt
+                                    }
+
+                                    .c13 {
+                                        font-weight: 700
+                                    }
+
+                                    .title {
+                                        padding-top: 0pt;
+                                        color: #000000;
+                                        font-size: 26pt;
+                                        padding-bottom: 3pt;
+                                        font-family: "Arial";
+                                        line-height: 1.15;
+                                        page-break-after: avoid;
+                                        orphans: 2;
+                                        widows: 2;
+                                        text-align: left
+                                    }
+
+                                    .subtitle {
+                                        padding-top: 0pt;
+                                        color: #666666;
+                                        font-size: 15pt;
+                                        padding-bottom: 16pt;
+                                        font-family: "Arial";
+                                        line-height: 1.15;
+                                        page-break-after: avoid;
+                                        orphans: 2;
+                                        widows: 2;
+                                        text-align: left
+                                    }
+
+                                    li {
+                                        color: #000000;
+                                        font-size: 11pt;
+                                        font-family: "Arial"
+                                    }
+
+                                    p {
+                                        margin: 0;
+                                        color: #000000;
+                                        font-size: 11pt;
+                                        font-family: "Arial"
+                                    }
+
+                                    h1 {
+                                        padding-top: 20pt;
+                                        color: #000000;
+                                        font-size: 20pt;
+                                        padding-bottom: 6pt;
+                                        font-family: "Arial";
+                                        line-height: 1.15;
+                                        page-break-after: avoid;
+                                        orphans: 2;
+                                        widows: 2;
+                                        text-align: left
+                                    }
+
+                                    h2 {
+                                        padding-top: 18pt;
+                                        color: #000000;
+                                        font-size: 16pt;
+                                        padding-bottom: 6pt;
+                                        font-family: "Arial";
+                                        line-height: 1.15;
+                                        page-break-after: avoid;
+                                        orphans: 2;
+                                        widows: 2;
+                                        text-align: left
+                                    }
+
+                                    h3 {
+                                        padding-top: 16pt;
+                                        color: #434343;
+                                        font-size: 14pt;
+                                        padding-bottom: 4pt;
+                                        font-family: "Arial";
+                                        line-height: 1.15;
+                                        page-break-after: avoid;
+                                        orphans: 2;
+                                        widows: 2;
+                                        text-align: left
+                                    }
+
+                                    h4 {
+                                        padding-top: 14pt;
+                                        color: #666666;
+                                        font-size: 12pt;
+                                        padding-bottom: 4pt;
+                                        font-family: "Arial";
+                                        line-height: 1.15;
+                                        page-break-after: avoid;
+                                        orphans: 2;
+                                        widows: 2;
+                                        text-align: left
+                                    }
+
+                                    h5 {
+                                        padding-top: 12pt;
+                                        color: #666666;
+                                        font-size: 11pt;
+                                        padding-bottom: 4pt;
+                                        font-family: "Arial";
+                                        line-height: 1.15;
+                                        page-break-after: avoid;
+                                        orphans: 2;
+                                        widows: 2;
+                                        text-align: left
+                                    }
+
+                                    h6 {
+                                        padding-top: 12pt;
+                                        color: #666666;
+                                        font-size: 11pt;
+                                        padding-bottom: 4pt;
+                                        font-family: "Arial";
+                                        line-height: 1.15;
+                                        page-break-after: avoid;
+                                        font-style: italic;
+                                        orphans: 2;
+                                        widows: 2;
+                                        text-align: left
+                                    }
+                                </style>
+                                <div class="c2">
+                                    <p class="c0"><span class="c1">These Website Standard Terms and Conditions (these &ldquo;Terms&rdquo; or these &ldquo;Website Standard Terms and Conditions&rdquo;) contained here on this webpage, shall govern your use of this website.</span></p>
+                                    <p class="c0"><span class="c1">These Terms apply in full force and effect to your use of this Website and by using this Site you accept all terms and conditions in full. You must not use https://10ball.org, if you have any objection to any of these Website Standard Terms and Conditions.</span></p>
+                                    <p class="c0"><span class="c4">Intellectual Property Rights</span></p>
+                                    <p class="c0"><span class="c1">By submitting any video or other media to 10ball.org. It hereby becomes intellectual property of 10ball and its licensors.</span></p>
+                                    <p class="c0"><span class="c1">When you use the download feature and download the content. You may use that media in any way you see fit. Even though it is still 10balls property. This only applies to the video/s downloaded via our recording page aka your recording.</span></p>
+                                    <p class="c0"><span class="c1">You must obtain 10balls written consent to share any videos that you have not uploaded to the site.</span></p>
+                                    <p class="c0"><span class="c6">&middot;</span><span class="c7">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="c6 c12">You can obtain consent by sending an email to </span><span class="c6 c8">10ballonline@gmail.com</span></p>
+                                    <p class="c0"><span class="c6">10ball and/or its licensors own all rights to the intellectual property and material contained in this Website. You are granted a limited license only, subject to the restrictions provided in these Terms, for purposes of viewing the material contained on</span><span class="c6"><a class="c9" href="https://www.google.com/url?q=https://10ball.org/&amp;sa=D&amp;ust=1507954992244000&amp;usg=AFQjCNEMGsQ1AH1eJImCVziqLi5x7OOvUA">&nbsp;</a></span><span class="c5"><a class="c9" href="https://www.google.com/url?q=https://10ball.org/&amp;sa=D&amp;ust=1507954992244000&amp;usg=AFQjCNEMGsQ1AH1eJImCVziqLi5x7OOvUA">https://10ball.org</a></span><span class="c1">.</span></p>
+                                    <p class="c0"><span class="c3">Advertising</span></p>
+                                    <p class="c0"><span class="c1">By using this site, you authorize and consent to let 10ball.org use any data or media (photos, videos, or other text media) you submit to the site for 10ball&rsquo;s advertising and recruiting purposes. We may also edit or modify any media for this purpose. By agreeing you also are allowing us to publish said media anywhere where we may recruit members including but not limited to Facebook, YouTube, or other social platforms.</span></p>
+                                    <p class="c0"><span class="c1">*Google, Facebook or any other platforms are not partners with 10ball.org. These company names are used under the United States trademark fair use.</span></p>
+                                    <p class="c0"><span class="c3">Tournaments</span></p>
+                                    <p class="c0"><span class="c1">By entering in any tournaments provided here at 10ball.org you are agreeing to these terms.</span></p>
+                                    <p class="c0"><span class="c6">1.</span><span class="c7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c6">To play in a tournament here at 10ball you must purchase a ticket from 10ball to play. Entry tickets are </span><span class="c6 c13">non-refundable.</span><span class="c1">&nbsp; </span></p>
+                                    <p class="c0"><span class="c6">2.</span><span class="c7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c6">In the event you win a prize you must fill out any applicable tax forms. You</span><span class="c6 c13">&nbsp;not 10ball.org or its employees</span><span class="c1">&nbsp;are responsible for all applicable taxes or charges in claiming the prize.</span></p>
+                                    <p class="c0"><span class="c6">a.</span><span class="c7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c1">In the event you are a minor (under the legal age in your area) a parent or guardian must claim the prize in luau of the participant. Parents or guardians must provide10ball.org with evidence that they are indeed the participants parents or guardian.</span></p>
+                                    <p class="c0"><span class="c7">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="c6">i.</span><span class="c7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="c1">You have 60 from the time you receive the tax forms via email to claim the prize. After those 60 days if the prize is not claimed then it will belong to 10ball.org</span></p>
+                                    <p class="c0"><span class="c1">&nbsp;</span></p>
+                                    <p class="c0"><span class="c3">Privacy</span></p>
+                                    <p class="c0"><span class="c1">We here at 10ball respect your personal piracy of all information you&rsquo;ve submitted. At 10ball.org&rsquo;s sole discretion we may use any data you provided for any purposes 10ball.org deems necessary.</span></p>
+                                    <p class="c0"><span class="c4">Restrictions</span></p>
+                                    <p class="c0"><span class="c1">You are expressly and emphatically restricted from all of the following: Selling, sublicensing and/or commercializing in any way, any Website material, Using this Website in a way that is damaging, or that could be damaging to this Website, Using this Website contrary to applicable laws and regulations, or in a manner that results in, or that could result in harm to the Website, or to any person or business entity, Engaging in any data mining, data harvesting, data extracting or any other similar type activity related to this Website, or while using this Website Using this Website to engage in any type of advertising or marketing activity</span></p>
+                                    <p class="c0"><span class="c1">Certain areas of this Website are restricted from access by you and 10ball may further restrict access to other areas of this Website by you, at any time, at its sole discretion.</span></p>
+                                    <p class="c0"><span class="c4">No warranties</span></p>
+                                    <p class="c0"><span class="c1">10ball makes no express or implied warranties or representations of any kind with regards to this Website or the materials contained on this Website. In addition, no content contained on this Website shall be considered as providing advice to you.</span></p>
+                                    <p class="c0"><span class="c4">Limitation of liability</span></p>
+                                    <p class="c0"><span class="c1">Under no circumstances shall 10ball, or any of its officers, directors and employees, be liable to you for anything resulting from or connected to your use of this Website. 10ball, including its officers, directors and employees shall not be liable for any indirect, consequential or special liability resulting from or in any way related to your use of this Website.</span></p>
+                                    <p class="c0"><span class="c4">Severability</span></p>
+                                    <p class="c0"><span class="c1">Should any provision of these Terms be found to be unenforceable or invalid under any applicable law, the unenforceability or invalidity shall not render these Terms unenforceable or invalid as a whole. Any such provisions shall be deleted without affecting the remaining provisions contained herein.</span></p>
+                                    <p class="c0"><span class="c4">Variation of Terms</span></p>
+                                    <p class="c0"><span class="c1">These Terms may be revised at any time 10ball sees fit, and you are expected to review such terms on a regular basis to ensure your understanding of all terms and conditions governing use of this Website. Post a notification on the main page of our Site, revise the updated date at the bottom of this page, or notify users via email. By using this Website you are acknowledging your responsibility to do so.</span></p>
+                                    <p class="c0"><span class="c4">Entire Agreement</span></p>
+                                    <p class="c0"><span class="c1">These Terms, including any legal notices and disclaimers contained on this Website, constitute the entire agreement between 10ball and you with regards to your use of this Website, and replace all prior agreements and understandings with respect to the same.</span></p>
+                                    <p class="c0"><span class="c4">Governing Law and Jurisdiction</span></p>
+                                    <p class="c0"><span class="c1">These Terms will be governed by and construed in accordance with the laws of United States, and you submit to the nonexclusive jurisdiction of the courts located in United States for the resolution of any disputes.</span></p>
+                                    <p class="c0"><span class="c3">&nbsp;</span></p>
+                                    <p class="c11"><span class="c10">&nbsp;</span></p>
+                                    <p class="c11 c14"><span class="c10"></span></p>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+            <script type="text/javascript">
+                $(function () {
+                    $('.button-checkbox').each(function () {
+
+                        // Settings
+                        var $widget = $(this),
+                            $button = $widget.find('button'),
+                            $checkbox = $widget.find('input:checkbox'),
+                            color = $button.data('color'),
+                            settings = {
+                                on: {
+                                    icon: 'glyphicon glyphicon-check'
+                                },
+                                off: {
+                                    icon: 'glyphicon glyphicon-unchecked'
+                                }
+                            };
+
+                        // Event Handlers
+                        $button.on('click', function () {
+                            $checkbox.prop('checked', !$checkbox.is(':checked'));
+                            $checkbox.triggerHandler('change');
+                            updateDisplay();
+                        });
+                        $checkbox.on('change', function () {
+                            updateDisplay();
+                        });
+
+                        // Actions
+                        function updateDisplay() {
+                            var isChecked = $checkbox.is(':checked');
+
+                            // Set the button's state
+                            $button.data('state', (isChecked) ? "on" : "off");
+
+                            // Set the button's icon
+                            $button.find('.state-icon')
+                                .removeClass()
+                                .addClass('state-icon ' + settings[$button.data('state')].icon);
+
+                            // Update the button's color
+                            if (isChecked) {
+                                $button
+                                    .removeClass('btn-default')
+                                    .addClass('btn-' + color + ' active');
+                            }
+                            else {
+                                $button
+                                    .removeClass('btn-' + color + ' active')
+                                    .addClass('btn-default');
+                            }
+                        }
+
+                        // Initialization
+                        function init() {
+
+                            updateDisplay();
+
+                            // Inject the icon if applicable
+                            if ($button.find('.state-icon').length == 0) {
+                                $button.prepend('<i class="state-icon ' + settings[$button.data('state')].icon + '"></i>');
+                            }
+                        }
+                        init();
+                    });
+                });
+            </script>
+
     </div>
-	
-
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tournament.html">Tournaments</a></li>
-		<li><a href="about.html">About Tournaments</a></li>
-        <li><a href="rules.html">Rules</a></li>
-		<li><a href="Handicap.html">Handicap Conversion</a></li>
-        <li><a href="payout.html">Payout %</a></li>
-        <li><a href="Forms.html">Forms</a></li>
-        <li><a href="library.html">Library</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="account.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-		
-      </ul>
+            <div class="col-sm-2 sidenav">
+                <div class="column side" style="background-color:black;">
+                    <a href="http://www.muellers.com/" target="_blank">
+                        <img src="http://www.muellers.com/ClientAssets/Images/Muellers-Logo-Md.png"
+                             style="width:100%;height:15%;border:0;">
+                    </a><br><br>
+                    <a href="https://cuestix.com/" target="_blank">
+                        <img src="https://cuestix.com/skin/frontend/rwd/cuestix/images/logo.png"
+                             style="width:100%;height:15%;border:0;">
+                    </a><br><br>
+                    <a href="http://billiardcue.com/index.htm" target="_blank">
+                        <img src="http://billiardcue.com/index_htm_files/17801.jpg"
+                             style="width:100%;height:15%;border:o;">
+                    </a>
+                    <a href="http://www.1stpawnllc.com" target="_blank">
+                        <img src="http://www.1stpawnllc.com/uploads/1/0/1/3/101321574/1stpawnlogo-gray_1_orig.jpg"
+                             style="width:100%;height:15%;border:0;">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-   <picture>
-     <source media="(min-width: 500px)" srcset="images/pool4.jpg">
-      <img src="" alt="" style="width: 100%;">
-   </picture>
-   <picture>
-     <source media="(min-width: 500px)" srcset="images/poolpic.jpg">
-      <img src="" alt="" style="width: 100%;">
-   </picture>
-   <picture>
-     <source media="(min-width: 500px)" srcset="images/bw.jpg">
-      <img src="" alt="" style="width: 100%;">
-   </picture>
-    </div>
-    <div class="col-sm-4 text-left">
-    	<form class="form-horizontal">
-<fieldset>
 
-<!-- Form Name -->
-<legend>Login</legend>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="loginEmail">Email Address</label>  
-  <div class="col-md-4">
-  <input id="loginEmail" name="loginEmail" type="text" placeholder="ie(johnsmith@domain.com)" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Password input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="loginPassword">Password</label>
-  <div class="col-md-4">
-    <input id="loginPassword" name="loginPassword" type="password" placeholder="enter a password" class="form-control input-md" required="">    
-  </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="userSubmit"></label>
-  <div class="col-md-4">
-    <button id="loginSubmit" name="loginSubmit" class="btn btn-primary">Log In!</button>
-  </div>
-</div>
-
-</fieldset>
-</form>
-
-    </div>
-    <div class="col-sm-4 text-left">
-    	<form class="form-horizontal">
-<fieldset>
-
-<!-- Form Name -->
-<legend>Register</legend>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="firstName">First Name</label>  
-  <div class="col-md-4">
-  <input id="firstName" name="firstName" type="text" placeholder="John" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="lastName">Last Name</label>  
-  <div class="col-md-4">
-  <input id="lastName" name="lastName" type="text" placeholder="Smith" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="userEmail">Email Address</label>  
-  <div class="col-md-4">
-  <input id="userEmail" name="userEmail" type="text" placeholder="ie(johnsmith@domain.com)" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-
-<!-- Password input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="userPassword">Password</label>
-  <div class="col-md-4">
-    <input id="userPassword" name="userPassword" type="password" placeholder="enter a password" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Password input --
-<div class="form-group">
-  <label class="col-md-4 control-label" for="userPasswordConfirm">Confirm Password</label>
-  <div class="col-md-4">
-    <input id="userPasswordConfirm" name="userPasswordConfirm" type="password" placeholder="re-enter your password" class="form-control input-md" required="">
-    
-  </div>
-</div>
-    -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="userName">User Name</label>  
-  <div class="col-md-4">
-  <input id="userName" name="userName" type="text" placeholder="" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Prepended text-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="phoneNumber">Phone Number</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <span class="input-group-addon">+ </span>
-      <input id="phoneNumber" name="phoneNumber" class="form-control" placeholder="Enter Your Phone Number with country code" type="text" required="">
-    </div>
-    <p class="help-block">IE [ + 1 (555) - 555 - 5555]</p>
-  </div>
-</div>
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="userSubmit"></label>
-  <div class="col-md-4">
-    <button id="userSubmit" name="userSubmit" class="btn btn-primary">Submit</button>
-  </div>
-</div>
-
-</fieldset>
-</form>
-
-    </div>
-    <div class="col-sm-2 sidenav">
-      <div class="column side" style="background-color:black;">
-	<a href="http://www.muellers.com/" target="_blank"><img src="http://www.muellers.com/ClientAssets/Images/Muellers-Logo-Md.png"
-	  style="width:100%;height:15%;border:0;">
-	</a><br><br>
-	<a href="https://cuestix.com/" target="_blank"><img src="https://cuestix.com/skin/frontend/rwd/cuestix/images/logo.png"
-	  style="width:100%;height:15%;border:0;">
-	  </a><br><br>
-	  <a href="http://billiardcue.com/index.htm" target="_blank"><img src="http://billiardcue.com/index_htm_files/17801.jpg"
-	  style="width:100%;height:15%;border:o;">
-	</a>
-	<a href="http://www.1stpawnllc.com" target="_blank"><img src="http://www.1stpawnllc.com/uploads/1/0/1/3/101321574/1stpawnlogo-gray_1_orig.jpg"
-	  style="width:100%;height:15%;border:0;">
-	</a> 
-  </div>
-    </div>
-  </div>
-</div>
-
-<footer class="container-fluid text-center">
-  <p>&copy; 10ball.org 2017</p>
-  <p>All rights reserved</p>
-</footer>
+    <footer class="container-fluid text-center">
+        <p>&copy; 10ball.org 2017</p>
+        <p>All rights reserved</p>
+    </footer>
 
 </body>
 </html>
