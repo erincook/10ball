@@ -5,19 +5,23 @@ Status: Open
   Create start and stop for tournaments
   
 Staus: Open
-  Create a webrtc for IOS system 
+  Create a webrtc for IOS system
+    (repistory on it on here)
   
 Status: Open 
   Create on screen scoring (and moving the score to the handicap coversion)
+    (patially done)
   
 Status: Open 
   Create the handicap system (3 different ones for each table size)
+    (partially done)
   
 Status: Open
   Add a video compressor to shrink the videos and how to add them to the data base
+    (h.264)
   
 Status: Open
-  create the functions for tickets(Buying and using them)
+  create the functions for tickets (Buying and using them)
   
 Status: Open 
   Create an Admin page
