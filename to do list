@@ -10,7 +10,7 @@ Staus: Open
   
 Status: Open 
   Create on screen scoring (and moving the score to the handicap coversion)
-    (patially done)
+    (The on screen scoring is done, but we still need to link it to the handicap conversion)
   
 Status: Open 
   Create the handicap system (3 different ones for each table size)
@@ -38,4 +38,7 @@ Status: Open
 Status: Open
   Create a membership ($30 a year)===Can compete with out it. Having it will allow users to download their video,
    get a discount to the store and reduced entry fee into the year end open tournament.
+   
+Status: Open
+  Video stream needs to be resized to be responsive to a cell phone.
   
