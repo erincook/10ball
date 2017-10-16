@@ -20,6 +20,13 @@
 </head>
 
 <body>
+  <p>Enter your match score including<br> your handicap (max is 50):</p>
+
+ <input id="numb">
+
+ <button type="button" onclick="myFunction()">Submit</button>
+
+ <p id="round score"></p>
 
   <div id="container">
 
@@ -41,6 +48,20 @@
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <script src="mainjs.js"></script>
   <script src="lib.js"></script>
+  <script>
+    function myFunction() {
+    var x, text;
+
+    x = document.getElementById("numb").value;
+
+    if (isNaN(x) || x < -10 || x > 50) {
+        text = "Invalid score";
+    } else {
+        text = "Score has been submitted";
+    }
+    document.getElementById("round score").innerHTML = text;
+    }
+  </script>
 
 </body>
 </html>
