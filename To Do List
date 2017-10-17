@@ -1,0 +1,53 @@
+ Status: Open
+  Create a log in page/registration page (Also facebook and Google)
+    (Nearly done)
+  
+ Status: Open 
+  Create start and stop for tournaments
+    (starts at 12:00am on the 1st & stops 11:59pm on the last day of the month)
+    (weekly would start at 12:00am on Sunday & end at 11:59pm on Saturday)
+    (maybe the use of a calender to be able to manually set these in advance)
+  
+Status: Open
+  Create a webrtc for IOS system
+    (repistory for it is on github using objective-c)
+  
+Status: Open 
+  Create on screen scoring (and moving the score to the handicap coversion)
+    (The on screen scoring is done, but we still need to link it to the handicap conversion)
+    (javascript for the conversion has been wrote, but may need to be tweeked)
+    (I updated the rules & this will be much simpler for everyone now!! Only taking the final score and still being secure)
+  
+Status: Open 
+  Create the handicap system (3 different ones for each table size)
+    (partially done)(the js for the handicap is wrote and the online scoring is in place)
+  
+Status: Open
+  Add a video compressor to shrink the videos and how to add them to the data base
+    (h.264?)
+  
+Status: Open
+  create the functions for tickets (Buying and using them)
+  
+Status: Open 
+  Create an Admin page (functions-start and stop tournaments, give a ticket, # of tickets out, number of tickets used, 
+    number of tickets ever bought, suspend a player, ban a player, review a player, etc...)
+  
+Status: Open
+  Create a live tournament info page (Shows number of entries and shows 1st place to last place)
+    (Uses the current x var in the handicap conversion for the 1st to last feature)
+  
+Status: Open 
+  Create a display box showing how much money is currently in the payout for each tournament.
+    (number of ticket x $10 = the amount shown) (Will display in the right column)
+
+Status: Open
+  Create a link to make purchases of tickets (Paypal and Credit cards) 
+  
+Status: Open
+  Create a VIP membership ($30 a year)---Can compete with out it. Having it will allow users to download their videos,
+   get a discount to the store and reduced entry fee into the year end open tournament. (not needed in the beginning)
+   
+Status: Open
+  Video stream needs to be resized to be responsive to a cell phone.
+    (Changing the style sheet)
